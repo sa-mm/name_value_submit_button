@@ -17,6 +17,7 @@ defmodule NameValueSubmitButtonWeb.Router do
   scope "/", NameValueSubmitButtonWeb do
     pipe_through :browser
 
+    live "/form", Live.FormLive
     get "/", PageController, :home
   end
 
